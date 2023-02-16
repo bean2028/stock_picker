@@ -10,7 +10,8 @@ def stock_picker(array)
       day += 1
     end
   end
-  puts profits
+  biggest_profit = profits.max_by { |key, value| key}
+  p biggest_profit[1]
 end
 
 stock_picker([17,3,6,9,15,8,6,1,10])
